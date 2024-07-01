@@ -1,0 +1,25 @@
+_format_version: '3.0'
+
+_transform: true
+
+services:
+  - name: usuario-service
+    url: http://api-usuario:3001/api/v1/usuario
+    routes:
+      - name: usuario-route
+        paths:
+          - /api/v1/usuario
+
+  - name: email-service
+    url: http://api-email:3002/api/v1/email
+    routes:
+      - name: email-route
+        paths:
+          - /api/v1/email  
+                   
+  - name: produto-service
+    url: http://api-produto:3003/api/v1/produto
+    routes:
+      - name: produto-route
+        paths:
+          - /api/v1/produto          
